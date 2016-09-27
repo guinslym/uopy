@@ -6,6 +6,7 @@ from django.http import HttpResponse
 from django.template import loader
 from django.views.generic import TemplateView
 from django.views.generic.list import ListView
+from django.core.cache import cache, get_cache
 
 from .models import ClubEvent
 import logging
